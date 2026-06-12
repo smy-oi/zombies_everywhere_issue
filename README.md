@@ -1,26 +1,135 @@
 # zombies_everywhere_issue
 This repository is used for submitting issues or downloading the mod "zombieseverywhere"
 
-Do you like zombie games? Are you troubled by the difficulty of the original Minecraft version being too simple? It's okay, now this Zombies Everywhere may meet your needs!
-What content has this mod implemented?
-1. Added multiple types of zombies:
-(1) Ordinary zombie: In fact, its basic attributes are the same as the original zombie, and it does not have any special skills. The reason for designing it is due to the design philosophy of this mod - it will not modify any creatures in the original version, which means that "ordinary zombies" added as creatures in this mod will be additionally adapted to the exclusive settings of this mod, such as the monster generation mechanism that comes with this mod or the classic mechanism of attribute growth over time.
-(2) Poisoned Corpse: The basic attributes have been slightly improved compared to the original zombie, with a basic health of 30 and 4 basic attack damage. Special skill: Players who are attacked will receive additional poisoning effects.
-(3) Swift corpse: hence the name Siyi, its speed is extremely fast, and when you discover it, it's already too late. Correspondingly, its various basic attributes have lower health than ordinary zombies, with a health value of only 12 points and an attack power of only 2 points.
-(4) Burner: 30 basic health and 4 attack damage. As a zombie expected to be set at the boss level, he was endowed with various authors' clever ideas, but ultimately received significant weakening. However, it still retains two special skills: 1) [Flame Missile]: When you are locked by it, it will start charging for several seconds and then continuously launch missiles at you for several seconds. That's right, it's exactly what you thought, the same attack style as the original Flame Man, but even more powerful! To avoid players becoming red hot, the author also thoughtfully removed the feature of igniting blocks. 2) 【 Enhanced Fire Bomb 】: As the most aggressive skill of the Burning Man, it will launch a withering missile at the player, causing 4 times the explosive damage based on its own attack, with a default range of 8 grids! Of course, like the original version's withering attack, it has the effect of destroying blocks, but you can disable this feature in the configuration settings.
-(5) Undead Summoner: Basic attributes are the same as the original zombie. Special Skill: By default, 5 regular zombies from the mod will be summoned every 30 seconds, and another special zombie from the mod will be summoned every 40 seconds! In addition, when it dies, it will summon an additional 10 regular zombies and 1 special zombie. As a special type of zombie, the author believes that it is extremely excessive because the author believes that its large refresh rate will cause your computer to crash, be careful of nesting.
-(6) Elite Zombie: That's right, compared to the original zombie's attributes, all its attributes have been comprehensively improved, and the value is its most powerful skill! Basic health of 75 points, attack power of 6 points,
-Speed 0.24 (slightly faster than the original zombie), armor 8 points (2 points ahead of the original zombie).
-Each type of zombie in the game has its own unique particle effects, except for regular zombies.
-2. Infection mechanism: When you are continuously attacked by zombies, there is a probability of being infected. When you are in an infected state, your speed and health limit will decrease. Unlike other effects, it will be infected again every 3 minutes or in an infected state, and it will upgrade. With each level upgrade, the decrease in speed and upper limit of life will increase. You can only relieve it by drinking milk. The initial infection probability is 0, and the probability of being continuously attacked by zombies in a short period of time will increase, up to 50%.
-3. The zombie generation to which this mod belongs is managed by the built-in generator in the mod, which provides players with a wide range of modification configurations, such as the generation weight of each type of zombie, the generation probability of each tick, the range of blocks around the player that generate zombies, and whether zombies are generated during the day. Due to the fact that the generator is still in the demo version, there is no distinction set for the generation of groups. But whether you are a novice player or a PVE expert, you can find the most suitable difficulty for yourself.
-4. Enhance the system for the number of days it only applies to zombies within the mod. You can decide whether to enable this feature through configuration options. After activation, zombies will receive attribute enhancement based on the previous day at a preset rate every day. For example, the default configuration is a lower growth rate of 0.025. After 5 days, the normal zombie's life zombie reaches 20 × 1.025 * * 4.
-5. In order to meet the needs of players who are passionate about zombie games, this mod can disable the generation of all monsters in the original version except for zombies and Shadow Dragon by enabling the "Zombie Exclusive Mode" configuration option! (That's right, including withering) This will result in only one monster in the world, zombies. Of course, perhaps you have to ask: How do I obtain the drops of the original monster? You should know that items such as the Last Shadow Pearl are necessary.
-6. To solve the loot problem, the mod has added a brand new loot table, and the mod's zombies will drop all possible drops from the original monsters! At this point, some people may ask again: How can we maintain game balance? In order to maintain game balance, the mod sets up a dimension detection mechanism. When the player is in hell, the probability of falling objects in hell will be greatly increased, and the probability of falling objects in the main world and the end ground will be suppressed. However, it should be noted that due to the wide variety of items, mods only allow three types of items to be dropped at a time. Some items that were originally meant to be dropped may also not be dropped due to bad luck. Hopefully, you won't become too popular. Haha, of course not. You can modify the probability of falling objects through the data packet or modify the "max_rop_types": 2 field to configure the ability to drop more types of items at once
-7. Observant friends may have noticed that when the number of days reaches a certain level, the number of zombies will reach a terrifying level, and even PvE experts may not be able to survive. It's okay, this mod also adds a powerful set of equipment - the Corruption Set (which includes a complete set of Corruption Armor and a Corruption Sword). They need to be synthesized from lower bound alloy equipment, and the required auxiliary materials include the lower bound star and the exclusive drop of this mod zombie - 'Corruption Blood'.
-They all have higher properties than the lower bound alloy set! Of course, fixed attributes can never catch up with zombies that can constantly become stronger. The mod introduces a very powerful mechanism for the ultimate weapon - the Corruption Sword: reinforcement.
-Use the "Forging Template" (used for the Diamond Set to ascend to the Lower Realm Alloy Set), "Corruption Sword", and "Corruption Blood" in sequence, and place them in positions 2, 5, and 8 of the Nine Palace Grid on the workbench from top to bottom. You will receive a weapon called "Corruption Sword (+1)", which will randomly receive an attack power bonus of 7.5% to 12.5% for each strengthening! Similarly, using the 'Corruption Sword (+1)' synthesis will result in the 'Corruption Sword (+2)'. When the pre enhancement level reaches a multiple of 4, the recipe will change and the 'Forging Template' needs to be replaced with the 'Lower Realm Star'. At this point, if the enhancement is successful, in addition to increasing the attack attribute, your sword will randomly receive or upgrade to an enchantment! When the pre reinforcement level reaches a multiple of 8, in addition to an increase in attack power and enchantment, you will also randomly receive an additional increase in attack power, attack speed, or attack distance. In theory, there is no upper limit to strengthening, but there is a certain probability of strengthening failure every time you enchant. Using the forging template formula will damage the 'Corruption Blood' and 'Forging Template' (which will be a huge expense). Using the formula of 'Lower Realm Star' will not only damage auxiliary materials, but also cause your sword to drop. For example, if+7 promotion+8 fails, your sword will drop to+6 level.
-(Note: Due to the issue of custom recipe return values, the enhanced recipe may be incorrectly displayed as an unordered recipe in JEI. Please use the correct placement position as described above!)! ）
-8. Mod provides players with a large number of customizable configuration options, which can be viewed on the configuration page or in the configuration file.
-Note: To ensure compatibility, this mod did not introduce mixins to modify the original content, which may result in the maximum attribute of zombies being unable to exceed the limit during actual gameplay (such as the maximum health value of 1024). It is recommended that players install this mod together with AttributeFix to break through the attribute limit. This mod will detect and configure AttributeFix on its own.
+
+Tired of the lackluster difficulty in vanilla Minecraft? Craving a truly intense and thrilling zombie apocalypse experience? **ZombiesEverywhere** is tailor\-made for you\! This mod builds a perilous, heart\-stopping zombie survival world while fully adapting to the vanilla game ecosystem\.
+
+## Core Content Overview
+
+### 1\. Six Unique Zombie Types
+
+All zombies are new entities added by the mod, **with no modifications to any vanilla mob attributes**, perfectly compatible with the mod's exclusive mechanics\. Except for Regular Zombies, each special zombie type features unique particle effects\.
+
+| Zombie Name | Basic Attributes | Special Skills \& Traits |
+| --- | --- | --- |
+| Normal Zombie | • Health: 20<br>• Attack: 3<br>• Speed: 0\.23<br>• Armor: 2 | No special skills; designed exclusively to fit the mod's spawn mechanics and day\-based growth system |
+| Poisone Zombie | • Health: 30<br>• Attack: 4<br>• Speed: 0\.23<br>• Armor: 2 | Attacks inflict the **Poison effect** |
+| FastZombie | • Health: 12<br>• Attack: 2<br>• Speed: 0\.6<br>• Armor: 2 | Raids players at ultra\-high speed—by the time it's detected, it's often too late to react |
+| Burning Zombie | • Health: 30<br>• Attack: 4<br>• Speed: 0\.23<br>• Armor: 2 | Two core skills:<br>1\. **Fire Missile**: Locks onto the player, charges up, and continuously fires enhanced Blaze fireballs for several seconds \(does not ignite blocks\)<br>2\. **Enhanced Fire Missile**: Fires Wither skulls, dealing explosive damage equal to 4x its attack power \(default blast radius: 8 blocks; block destruction can be disabled via config\) |
+| SummonerZombie | • Health: 20<br>• Attack: 3<br>• Speed: 0\.23<br>• Armor: 2 | 1\. Summons 5 mod Regular Zombies every 30 seconds<br>2\. Summons 1 mod Special Zombie every 40 seconds<br>3\. **Extra summons on death**: 10 Regular Zombies \+ 1 Special Zombie<br>⚠️ High risk: Mass spawning may cause game lag—beware of the "nesting doll" effect |
+| EliteZombie | • Health: 75<br>• Attack: 6<br>• Speed: 0\.24<br>• Armor: 8 \(far exceeding vanilla\) | Dominant in all attributes—pure numerical strength is its greatest skill |
+
+### 2\. Infection Mechanic
+
+- **Trigger Condition**: Sustained attacks by zombies in a short period raise infection probability from 0 up to a **maximum of 50%**\.
+  
+- **Infection Effects**: Reduces the player's movement speed and maximum health\.
+  
+- **Level Up**: Automatically levels up by 1 every 3 minutes; being attacked again while infected also triggers a level up, with negative effects intensifying per level\.
+  
+- **Only Antidote**: Drinking Milk fully removes all levels of infection\.
+  
+
+### 3\. Highly Customizable Zombie Spawning System
+
+The mod includes a built\-in independent spawner with full configuration options:
+
+- Spawn weight for each zombie type
+  
+- Spawn probability per Tick
+  
+- Chunk range for zombie spawning around the player
+  
+- Whether zombies can spawn during daytime
+  
+- Currently a Demo\-version spawner \(biome\-specific spawn differences not yet implemented\)
+  
+- Default difficulty is high—casual players may need to tweak settings
+  
+
+### 4\. Dynamic Day\-Based Enhancement System
+
+- Only applies to mod\-exclusive zombies, **no impact on vanilla mobs**\.
+  
+- Toggle on/off freely via config options\.
+  
+- Default growth rate: All attributes increase daily based on the previous day's values\.
+  
+- Example \(default health growth multiplier: 1\.025x\): Regular Zombie health after 5 days = 20 × 1\.025⁴ ≈ 22\.07 points
+  
+
+### 5\. Immersive Zombie\-Exclusive Mode
+
+When enabled via config, **disables spawning of all vanilla mobs except Zombies and the Ender Dragon** \(including the Wither\), creating a pure zombie apocalypse world\.
+
+### 6\. Balanced Full Loot System
+
+To resolve the lack of vanilla mob drops in Zombie\-Exclusive Mode:
+
+- Mod zombies' loot tables include **all drops from disabled vanilla mobs**\.
+  
+- **Dimension Balance Mechanic**: When the player is in the Nether, drop rates for Nether\-exclusive items are significantly boosted; rates for Overworld/End items are suppressed accordingly\.
+  
+- Limits a maximum of **3 item types** per drop \(adjust via the `max_drop_types` field in the config file\)\.
+  
+- Some originally guaranteed drops become probabilistic; drop rates can also be customized via Data Packs\.
+  
+
+### 7\. Infinitely Scalable Corrupted Gear System
+
+To counter increasingly powerful zombies, the mod adds a full set of top\-tier gear with infinite enhancement potential:
+
+#### Basic Gear
+
+- **Corrupted Armor Set** \& **Corrupted Sword**: Crafted using Netherite gear as the base, combined with Nether Stars and the mod\-exclusive drop **Corrupted Blood**\.
+  
+- Basic attributes outperform the Netherite set across the board\.
+  
+
+#### Corrupted Sword Enhancement Mechanics
+
+- **Basic Enhancement** \(Levels \+1→\+3, \+5→\+7, \+9→\+11\.\.\.\):
+  
+  - Recipe: Smithing Template \(top\) \+ Corrupted Sword \(middle\) \+ Corrupted Blood \(bottom\) \(positions 2, 5, 8 in the 3x3 crafting grid\)\.
+    
+  - Effect: Random attack damage boost \(7\.5%\~12\.5%\) per enhancement\.
+    
+  - Failure Penalty: Only Corrupted Blood and Smithing Template are consumed; weapon level remains unchanged\.
+    
+- **Enchantment Enhancement** \(Levels \+4, \+8, \+12\.\.\.\):
+  
+  - Recipe: Nether Star \(top\) \+ Corrupted Sword \(middle\) \+ Corrupted Blood \(bottom\)\.
+    
+  - Effect: Attack damage boost \+ random enchantment gain/upgrade\.
+    
+- **Ultimate Enhancement** \(Levels \+8, \+16, \+24\.\.\.\):
+  
+  - Effect: Attack damage boost \+ enchantment enhancement \+ random permanent boost to **attack damage / attack speed / attack range**\.
+- **Important Note**: Enhancements have a failure chance\. If a Nether Star recipe fails, the weapon **drops 1 level** \(e\.g\., failing to upgrade from \+7 to \+8 reverts it to \+6\)\.
+  
+- **Current Status**: Still in Demo version, only the Corrupted Sword has implemented enhancement effects\.
+  
+- **Recipe Note**: Due to custom recipe return value limitations, JEI incorrectly displays this as a shapeless recipe—strictly follow the grid positions above\.
+  
+
+### 8\. Comprehensive Config Support
+
+The mod offers extensive customization with numerous adjustable parameters:
+
+- Basic attributes and skill parameters for all zombies
+  
+- Infection mechanic probability, upgrade timing, and negative effect intensity
+  
+- Spawning system parameters
+  
+- Day\-based enhancement growth rate and upper limit
+  
+- Gear enhancement failure mechanics
+  
+
+## ⚙️ Compatibility Notes
+
+- For optimal compatibility, this mod does **not** use Mixin—this limits zombie enhancements to vanilla attribute caps \(e\.g\., maximum health of 1024\)\. If possible, **we highly recommend installing AttributeFix Mod alongside** to break attribute caps\.
+  
+- The mod automatically detects AttributeFix and configures itself—no manual adjustments required\.
 
